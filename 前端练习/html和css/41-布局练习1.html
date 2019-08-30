@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>布局练习</title>
+		<style type="text/css">
+			.pagenation{
+				width: 600px;
+				height: 40px;
+				border: 1px solid black;
+				
+				list-style: none;
+				margin: 50px auto 0px;
+				padding: 0px;
+				
+				font-size: 0px;
+				text-align: center;
+			}
+			.pagenation li{
+				display: inline-block;
+				height: 26px;
+				font-size: 12px;
+				margin: 7px 5px 0px;
+			}
+			.pagenation li a{
+				display: block;
+				height: 26px;
+				/* 行高 */
+				line-height: 26px;
+				padding: 0px 10px;
+				background-color: gold;
+				font: normal 12px/26px "microsoft yahei";	
+				color: black;
+				text-decoration: none;
+			}
+			.pagenation li a:hover{
+				background-color: black;
+				color: white;
+			}
+			.menu{
+				
+				list-style: none;
+				margin: 50px auto 0px;
+				padding: 0px;
+				width: 958px;
+				height: 40px;
+				border: 1px solid pink;
+				text-align: center;
+				font-size: 0px;
+			}
+			.menu li{
+				display: inline-block;
+				font-size: 14px;
+				height: 40px;
+			}
+			.menu li a{
+				display: block;
+				height: 40px;
+				font: normal 14px/40px "microsoft yahei";
+				color: black;
+			}
+			.menu li span{
+				display: block;
+				height: 40px;
+				font: normal 14px/40px "microsoft yahei";
+				margin: 0px 20px;
+			}
+			.menu li a:hover{
+				color: deeppink;
+			}
+			.menu2{
+				list-style: none;
+				margin: 50px auto 0px;
+				padding: 0px;
+				width: 960px;
+				height: 40px;
+				background-color: #00FFFF;
+				position: relative;
+			}
+			.menu2 li{
+				width: 100px;
+				height: 40px;
+				float: left;
+			}
+			.menu2 li a{
+				display: block;
+				width: 100px;
+				height: 40px;
+				line-height: 40px;
+				text-align: center;
+				font-size: 14px;
+				font-family: "microsoft yahei";
+				color: black;
+				text-decoration: none;
+			}
+			.menu2 li:hover{
+				background-color: aliceblue;
+			}
+			.menu2 .new{
+				width: 33px;
+				height: 20px;
+				background: url(../img/new.png) no-repeat;
+				position: absolute;
+				left: 432px;
+				top: -10px;
+			}
+		</style>
+	</head>
+	<body>
+		<ul class="pagenation">
+			<li><a href="#">上一页</a></li>
+			<li><a href="#">1</a></li>
+			<li><a href="#">2</a></li>
+			<li><a href="#">3</a></li>
+			<li><a href="#">4</a></li>
+			<li><span>...</span></li>
+			<li><a href="#">17</a></li>
+			<li><a href="#">18</a></li>
+			<li><a href="#">19</a></li>
+			<li><a href="#">下一页</a></li>
+		</ul>
+		<ul class="menu">
+			<li><a href="#">网站建设</a></li>
+			<li><span>|</span></li>
+			<li><a href="#">售后服务</a></li>
+			<li><span>|</span></li>
+			<li><a href="#">招贤纳士</a></li>
+			<li><span>|</span></li>
+			<li><a href="#">联系我们</a></li>
+			<li><span>|</span></li>
+			<li><a href="#">工作机会</a></li>
+			<li><span>|</span></li>
+			<li><a href="#">法律声明</a></li>
+			<li><span>|</span></li>
+			<li><a href="#">共同条框</a></li>
+		</ul>
+		<ul class="menu2">
+			<li><a href="#">公司简介</a></li>
+			<li><a href="#">公司简介</a></li>
+			<li><a href="#">公司简介</a></li>
+			<li><a href="#">公司简介</a></li>
+			<li><a href="#">公司简介</a></li>
+			<li><a href="#">公司简介</a></li>
+			<li><a href="#">公司简介</a></li>
+			<li class="new"><img src="../img/new.png" alt="new标签图片" /></li>
+		</ul>
+	</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>图片说明文字动画</title>
+		<style type="text/css">
+			.box{
+				width: 500px;
+				height: 375px;
+				margin: 50px auto 0px;
+				position: relative;
+				overflow: hidden;
+			}
+			.book{
+				width: 500px;
+				height: 150px;
+				background-color: rgba(0,0,0,0.3);
+				color: white;
+				position: absolute;
+				top: 375px;
+				transition: all 500ms ease;
+			}
+			.box:hover .book{
+				top: 250px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<img src="../img/002-01.jpg" alt="水果" />
+			<div class="book">
+				<h2>文字说明标题</h2>
+				<p>2019年2月1日 - CSS 中的颜色有三种定义方式:使用颜色方法(RGB、RGBA、HSL、HSLA),十六进制颜色值和预定义的颜色名称。 RGBA 是代表Red(红色) Green(绿色) Blue(蓝色)
+				</p>
+			</div>
+		</div>
+	</body>
+</html>

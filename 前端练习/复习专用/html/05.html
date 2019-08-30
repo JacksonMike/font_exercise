@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>div css布局</title>
+		<style type="text/css">
+			.box1 .box{
+				color: red;
+				font-size: 20px;
+				font-family: "microsoft yahei";
+				font-style: italic;
+				font-weight: bold;
+				line-height: 50px;
+				text-decoration: none;
+				text-indent: 24px;
+				text-align: center;
+			}
+			*{
+				color: blue;
+			}
+			#box{
+				color: pink;
+			}
+			.box1 span{
+				color: yellow;
+			}
+			.box1:hover{
+				color: green;
+			}
+			.box:before{
+				content: "首文字";
+			}
+			.box:after{
+				content: "尾文字";
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box1">
+			王毅表示，喀麦隆是中国在非洲的传统友好国家和重要合作伙伴。中喀一贯相互理解、相互支持。中方坚决反对外             部势力干涉喀麦隆内政。双方要继续在涉及彼此核心利益和重大关切问题上相互理解和支持。
+			<span>王夫子</span>
+		</div>
+		<div class="box">
+			王毅表示
+		</div>
+	</body>
+</html>

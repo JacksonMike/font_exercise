@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>结点操作</title>
+		<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				// $('#div1').html($('#div1').html()+'<a href="#">链接</a>');
+				$a = $('<a href="#">链接</a>');
+				$a2 = $('<a>');
+				$('#div1').append($a);
+				$p = $('<p>这是一个p标签</p>');
+				$h2 = $('<h2>这是一个h2</h2>');
+				$h3 = $('<h3>这是一个h3</h3>')
+				// 空标签
+				$('#div1').append($a2);
+				/* 与append相反 子放到父内部
+				$a(#'div1').appendTo($a2); */
+				
+				// $('#div1').prepend($p);
+				$p.prependTo($('#div1'));
+				// $('#div1').after($h2);
+				$h2.insertAfter($('#div1'));
+				// $('#div1').before($h3);
+				$h3.insertBefore('#div1');
+			})
+		</script>
+	</head>
+	<body>
+		<div id="div1">
+			<h1>这是一个div元素</h1>
+		</div>
+	</body>
+</html>

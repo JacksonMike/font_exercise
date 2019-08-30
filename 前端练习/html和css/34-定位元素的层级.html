@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>定位元素的层级</title>
+		<style type="text/css">
+			.con{
+				width: 400px;
+				height: 400px;
+				margin: 50px auto 0px;
+				border: 1px solid black;
+				position: relative;
+			}
+			.con div{
+				width: 200px;
+				height: 200px;
+				position: absolute;
+			}
+			.box1{
+				background-color: red;
+				left: 20px;
+				top: 20px;
+				/* 默认小于10,越大越考前 */
+				z-index: 10;
+			}
+			.box2{
+				background-color: green;
+				left: 40px;
+				top: 40px;
+			}
+			.box3{
+				background-color: blue;
+				left: 60px;
+				top: 60px;
+			}
+			.box4{
+				background-color: yellow;
+				left: 80px;
+				top: 80px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="con">
+			<div class="box1"></div>
+			<div class="box2"></div>
+			<div class="box3"></div>
+			<div class="box4"></div>
+		</div>
+	</body>
+</html>

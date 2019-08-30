@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>置顶菜单</title>
+		<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$menu = $('.menu');
+				$menu_back = $('.menu_back');
+				$totop = $('.totop');
+				$(window).scroll(function() {
+					var iNum = $(document).scrollTop();
+					if (iNum > 200) {
+						$menu.css({
+							'position': 'fixed',
+							'left': '50%',
+							'top': '0',
+							'marginLeft': -480
+						})
+						$menu_back.show();
+					} else {
+						$menu.css({
+							'position': 'static',
+							'marginLeft': 'auto'
+						})
+						$menu_back.hide();
+					}
+					if(iNum>400){
+						$totop.fadeIn();
+					}else{
+						$totop.fadeOut();
+					}
+				})
+				$totop.click(function() {
+					$('html, body').animate({
+						'scrollTop': '0px'
+					});
+				})
+			})
+		</script>
+		<style type="text/css">
+			body {
+				margin: 0px;
+			}
+
+			.banner {
+				width: 960px;
+				height: 200px;
+				background-color: blue;
+				margin: 0 auto 0;
+			}
+
+			.menu {
+				width: 960px;
+				height: 80px;
+				background-color: green;
+				margin: 0 auto 0;
+				text-align: center;
+				line-height: 80px;
+			}
+
+			p {
+				text-align: center;
+				color: gold;
+			}
+
+			.menu_back {
+				width: 960px;
+				height: 80px;
+				margin: 0 auto 0;
+				display: none;
+			}
+
+			.totop {
+				width: 100px;
+				height: 100px;
+				background-color: red;
+				color: blue;
+				position: fixed;
+				right: 20px;
+				bottom: 50px;
+				line-height: 60px;
+				font-size: 40px;
+				text-align: center;
+				border-radius: 50%;
+				cursor: pointer;
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="banner"></div>
+		<div class="menu">菜单</div>
+		<div class="menu_back"></div>
+		<div class="totop">⬆️</div>
+		<p>文档内容</p>
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<p>文档内容</p>
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<p>文档内容</p>
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<p>文档内容</p>
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<p>文档内容</p>
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<p>文档内容</p>
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<p>文档内容</p>
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<p>文档内容</p>
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<p>文档内容</p>
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+	</body>
+</html>

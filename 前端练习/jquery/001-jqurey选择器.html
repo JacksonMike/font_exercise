@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>jqurey选择器</title>
+		<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				var $div = $('#div1');
+				$div.css({'color':'red'});
+				var $div2 = $('.box');
+				$div2.css({'color':'gold'});
+				var $div3 = $('.list li');
+				$div3.css({'background-color':'blue'});
+			});
+		</script>
+	</head>
+	<body>
+		<div id="div1">这是一个div1</div>
+		<div class="box">这是一个div2</div>
+		<div class="box">这是一个div3</div>
+		<ul class="list">
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+			<li>6</li>
+			<li>7</li>
+		</ul>
+	</body>
+</html>

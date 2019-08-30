@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>定时器动画</title>
+		<script type="text/javascript">
+			window.onload = function() {
+				var oDiv = document.getElementById('div1');
+				var iLeft = 0;
+				var iSpeed = 3;
+
+				function moving() {
+					iLeft += iSpeed;
+					oDiv.style.left = iLeft + 'px';
+					if (iLeft > 800) {
+						iSpeed = -3;
+					}
+					if (iLeft < 0) {
+						iSpeed = 3;
+					}
+				}
+				var timer = setInterval(moving, 1);
+			}
+		</script>
+		<style type="text/css">
+			.box {
+				width: 200px;
+				height: 200px;
+				left: 0px;
+				top: 100px;
+				position: absolute;
+				background-color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="div1" class="box"></div>
+	</body>
+</html>

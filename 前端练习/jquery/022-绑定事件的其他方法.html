@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>绑定事件的其他方法</title>
+		<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$('#btn').bind('click mouseover',function(){
+					alert('触发事件绑定的函数');
+					$(this).unbind('mouseover');
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<input type="button" name="" value="按钮" id="btn" />
+	</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>title</title>
+		<script src="js/jquery-1.12.4.js"></script>
+	</head>
+	<body>
+		<ul>
+			<li>123</li>
+			<li>345</li>
+			<li>456</li>
+		</ul>
+		<script>
+			var arr = [1,2,3,4]
+			$.each(arr,function (index,element) {
+				console.log(index, element);
+			});
+			
+			var obj = {"name":"Jim", "age":88};
+			$.each(obj,function (index,element) {
+				console.log(index, element);
+			});
+			
+			$("ul li").each(function (index,element) {
+				console.log(index, element);
+				console.log($(this).html());
+			});
+		</script>
+	</body>
+</html>

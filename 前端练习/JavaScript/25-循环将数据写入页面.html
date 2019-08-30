@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>循环将数据写入页面</title>
+		<script type="text/javascript">
+			window.onload = function() {
+				var oUi = document.getElementById('list');
+				var aList = ['美人鱼', '士兵突击', '美女与野兽'];
+				var iLen = aList.length;
+				var sTr = '';
+				for (var i = 0; i < iLen; i++) {
+					sTr += '<li>' + aList[i] + '</li>';
+				}
+				// 属性设置或返回表格行的开始和结束标签之间的 HTML
+				oUi.innerHTML = sTr;
+			}
+		</script>
+		<style type="text/css">
+			.list {
+				list-style: none;
+				margin: 50px auto 0px;
+				padding: 0px;
+				width: 300px;
+				height: 305px;
+			}
+
+			.list li {
+				height: 60px;
+				border-bottom: 1px dotted blue;
+				line-height: 60px;
+				font-size: 16px;
+			}
+		</style>
+	</head>
+	<body>
+		<ul class="list" id="list">
+			
+		</ul>
+	</body>
+</html>

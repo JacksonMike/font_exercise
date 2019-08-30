@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>通过标签获取元素</title>
+		<script type="text/javascript">
+			window.onload = function() {
+				var aLi = document.getElementsByTagName('li');
+				var iLen = aLi.length;
+				// alert(aLi.length);
+				// aLi[0].style.backgroundColor = 'red';
+
+				/* for(var i=0;i<iLen;i++){
+					aLi[i].style.backgroundColor = 'red';
+				} */
+				var oUi = document.getElementById('list1');
+				var aLi2 = oUi.getElementsByTagName('li');
+				var iLen2 = aLi2.length;
+				for (var i = 0; i < iLen2; i++) {
+					if (i % 2 == 0) {
+						aLi2[i].style.backgroundColor = 'pink';
+					}
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<ul id="list1">
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+		</ul>
+
+		<ul id="list2">
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+		</ul>
+	</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>事件委托</title>
+		<style type="text/css">
+			.list {
+				background-color: gold;
+				list-style: none;
+				padding: 10px;
+			}
+
+			.list li {
+				height: 30px;
+				background-color: red;
+				margin: 10px;
+			}
+		</style>
+		<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				/* $('.list li').click(function() {
+					$(this).css({
+						'backgroundColor': 'green'
+					});
+				}) */
+				$('.list').delegate('li', 'click', function() {
+					// 每次委托的子元素
+					$(this).css({
+						'backgroundColor': 'pink'
+					});
+				})
+				var $li = $('<li>100000000</li>');
+				$('.list').append($li);
+			})
+		</script>
+	</head>
+	<body>
+		<ul class="list">
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+			<li>6</li>
+			<li>7</li>
+			<li>8</li>
+			<li>9</li>
+		</ul>
+	</body>
+</html>

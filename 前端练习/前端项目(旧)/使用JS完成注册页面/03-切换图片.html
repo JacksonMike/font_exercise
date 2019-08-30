@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>切换图片</title>
+		<style>
+			div{
+				border: 1px solid white;
+				width: 500px;
+				height: 500px;
+				margin: auto;
+				text-align: center;
+			}
+		</style>
+		<script>
+			var i=1
+			function changeImg(){
+				i++
+				document.getElementById("img1").src="../网站信息显示页面/排版相关标签学习/img/small0"+i+".jpg"
+				if(i==5){
+					i=0
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div>
+			<input type="button" value="下一张" onclick="changeImg()" />
+			<img src="../网站信息显示页面/排版相关标签学习/img/small01.jpg" height="100%" width="100%" id="img1" />
+		</div>
+	</body>
+</html>

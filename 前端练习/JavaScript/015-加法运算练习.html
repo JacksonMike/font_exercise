@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>加法运算练习</title>
+		<script type="text/javascript">
+			window.onload = function(){
+				var oInput1 = document.getElementById('input1');
+				var oInput2 = document.getElementById('input2');
+				var oBtn = document.getElementById('btn');
+				oBtn.onclick = function(){
+					var iValue1 = parseInt(oInput1.value)
+					var iValue2 = parseInt(oInput2.value)
+					alert(iValue1+iValue2)
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<input type="text" name="" id="input1" />
+		<input type="text" name="" id="input2" />
+		<input type="button" name="" value="相加" id="btn" />
+	</body>
+</html>

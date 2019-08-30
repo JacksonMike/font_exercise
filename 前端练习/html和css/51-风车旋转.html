@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>风车旋转</title>
+		<style type="text/css">
+			@keyframes rotate{
+				from{transform: rotate(0deg);}
+				to{transform: rotate(360deg);}
+			}
+			.car{
+				display: block;
+				width: 400px;
+				height: 400px;
+				margin: 50px auto 0px;
+				animation: rotate 1s linear infinite normal;
+			}
+		</style>
+	</head>
+	<body>
+		<img src="../img/fengche.png" alt="风车" class="car" />
+	</body>
+</html>

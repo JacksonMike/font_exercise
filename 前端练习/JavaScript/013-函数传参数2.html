@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>函数传参</title>
+		<script type="text/javascript">
+			window.onload = function(){
+				function fnChangeStyle(mystyle, val){
+					var oDiv = document.getElementById("div1");
+					oDiv.style[mystyle] = val;
+				}
+				fnChangeStyle('backgroundColor','red');
+				fnChangeStyle('color', 'green');
+				fnChangeStyle('fontSize','30px');
+				
+					
+				function fnAdd(a,b){
+					var ic = a + b;
+					return c;
+				}
+				var iResult = fnAdd(3,4);
+				alert(iResult);
+			}
+		</script>
+	</head>
+	<body>
+		<div id="div1">这是一个div元素</div>
+	</body>
+</html>

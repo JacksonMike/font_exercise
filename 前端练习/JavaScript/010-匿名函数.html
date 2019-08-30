@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>匿名函数</title>
+		<script type="text/javascript">
+			window.onload = function(){
+				var oBtn = document.getElementById("button1");
+				oBtn.onclick = function(){
+					var oDiv = document.getElementById('div1');
+					oDiv.style.color = "red";
+					oDiv.style.fontSize = "40px";
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div id="div1">这是一个div字段</div>
+		<input type="button" name="" value="改变属性" id="button1" />
+	</body>
+</html>

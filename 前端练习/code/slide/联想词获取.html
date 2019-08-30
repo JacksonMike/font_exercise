@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Document</title>
+		<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript">
+			$.ajax({
+				url:'https://sug.so.360.cn/suggest?',
+				type:'get',
+				dataType:'jsonp',
+				data:{'word':'d'}
+			})
+			.done(function(data){
+				console.log(data);
+			})
+		</script>
+	</head>
+	<body>
+<!-- 			https://sug.so.360.cn/suggest?callback=suggest_so&encodein=utf-8&encodeout=utf-8&format=json&fields=word&word=d&huid=11Qhl%2BgFAmk9lcrRGE0iefURSeuUicXSjPvNbtdSM2JrE%3D -->
+	</body>
+</html>

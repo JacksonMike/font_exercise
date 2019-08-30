@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>jquery事件</title>
+		<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				/* $('#input1').focus(function(){
+					alert('hello');
+				}) */
+				$('#input1').focus();
+				$('#input1').blur(function() {
+					var sVal = $(this).val();
+					alert(sVal);
+				});
+				$('#form1').submit(function(){
+					// alert('提交');
+					return false;
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<form id="form1" action="http://www.baidu.com">
+			<input type="text" name="dat01" id="input1" /><br />
+			<input type="text" name="dat02" id="input2" /><br />
+			<input type="submit" name="" value="提交" id="sub" />
+		</form>
+	</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>元素属性的操作</title>
+		<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				var $a = $('.link');
+				var $img = $('#img1');
+				var $div = $('#div1');
+				// alert($img.prop('src'));
+				$a.prop({'href':'http://www.baidu.com','title':'百度网链接'});
+				$div.html('<p>hello world<p>');
+			});
+		</script>
+	</head>
+	<body>
+		<a href="#" class="link">这是一个标签</a>
+		<img src="../img/002-01.jpg" alt="水果" id="img1" />
+		<div id="div1"></div>
+	</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>改变元素内容</title>
+		<script type="text/javascript">
+				window.onload = function(){
+					var oDiv = document.getElementById('box');
+					var sTr = oDiv.innerHTML;
+					// oDiv.innerHTML = "修改的文字";
+					oDiv.innerHTML = "<a href='http://www.itcast.cn'>黑马</a>"
+					
+				}
+		</script>
+	</head>
+	<body>
+		<div id="box">这是一段div文字</div>
+	</body>
+</html>

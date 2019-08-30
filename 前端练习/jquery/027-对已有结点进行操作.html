@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>对已有结点进行操作</title>
+		<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$('#p1').insertBefore($('#title'));
+				$('#span1').appendTo($('#p1'));
+				$('#link1').prependTo($('#p1'));
+				$('#title').remove();
+			})
+		</script>
+	</head>
+	<body>
+		<h1 id="title">这是一个h1元素</h1>
+		<p id="p1">这是一个p元素</p>
+		<span id="span1">这是一个span元素</span>
+		<a href="#" id="link1">点我有惊喜</a>
+	</body>
+</html>

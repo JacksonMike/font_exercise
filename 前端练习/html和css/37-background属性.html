@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>background属性</title>
+		<style type="text/css">
+			.box{
+				background-color: red;
+				width: 400px;
+				height: 200px;
+				border: 5px solid black;
+				margin: 50px auto 0px;
+				background-image: url(../img/bg.jpg);
+				/* 重复y轴
+				background-repeat: repeat-y; */
+			    /* 平铺一次
+				background-repeat: no-repeat; */
+				/* 平铺所有的
+				background-repeat: repeat; */
+				background-repeat: no-repeat;
+				/* 平铺的位置方位值 center left right 总共9种 */
+				/* background-position: center, center; */
+				background-position: 110px -10px;
+				
+/* 				合着写
+				background: url(../img/001.jpg) left top no-repeat blue; */
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			h5图片
+		</div>
+	</body>
+</html>

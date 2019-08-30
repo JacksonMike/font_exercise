@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>none属性</title>
+		<style type="text/css">
+			.book1{
+				width: 200px;
+				height: 200px;
+				background-color: gold;
+				display: inline-block;
+			}
+			.book3{
+				width: 200px;
+				height: 200px;
+				background-color: gold;
+				display: none;
+			}
+			.book2:hover .book3{
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="book1">hello world</div>
+		<div class="book1">hello world</div>
+		<div class="book2">
+			<h1>Come on</h1>
+			<div class="book3">
+				nice to meet you
+			</div>
+		</div>
+	</body>
+</html>

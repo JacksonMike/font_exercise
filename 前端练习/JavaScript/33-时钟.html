@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>时钟</title>
+		<script type="text/javascript">
+			window.onload = function() {
+				var oDiv = document.getElementById('div1');
+				function fnTimego(){
+					var sNow = new Date();
+					var iYear = sNow.getFullYear();
+					var iMonth = sNow.getMonth() + 1;
+					var iDay = sNow.getDay();
+					var iHour = sNow.getHours();
+					var iMinute = sNow.getMinutes();
+					var iSecond = sNow.getSeconds();
+					var sTr = '当前时间是:' + iYear + '年' + iMonth + '月' + iDay + '日' + iHour + '时' + iMinute + '分' + iSecond + '秒';
+					oDiv.innerHTML = sTr;
+				}
+				fnTimego();
+				setInterval(fnTimego,1000);
+			}
+		</script>
+	</head>
+	<body>
+		<div id="div1"></div>
+	</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>定时器</title>
+		<script type="text/javascript">
+			function myAlter(){
+				alert("hello");
+			}
+			/* var time01 = setTimeout(myAlter,2000);
+			clearTimeout(time01); */
+			
+			/* var time02 = setInterval(myAlter,1000);
+			clearTimeout(time02); */
+			var time03 = setInterval(function(){
+				alert("hello world");
+			},1000);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

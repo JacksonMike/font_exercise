@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>加入购物车</title>
+		<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				var $chart = $('.chart');
+				var $count = $('.chart em');
+				var $btn = $('.add');
+				var $point = $('.point');
+
+				$btn.click(function() {
+					var oPos1 = $btn.offset();
+					var oPos2 = $chart.offset();
+					$point.css({
+						'left': oPos1.left,
+						'top': oPos1.top
+					});
+					$point.show();
+					$point.animate({
+						'left': oPos2.left,
+						'top': oPos2.top
+					}, function() {
+						$point.hide();
+						var iNum = $count.html();
+						$count.html(parseInt(iNum) + 1);
+					});
+				});
+			});
+		</script>
+		<style type="text/css">
+			.chart {
+				width: 200px;
+				height: 200px;
+				background-color: green;
+				text-align: center;
+				float: right;
+				margin-right: 100px;
+				margin-top: 100px;
+			}
+
+			.chart em {
+				color: red;
+			}
+
+			.add {
+				width: 100px;
+				height: 100px;
+				background-color: blue;
+				border: 0px;
+				color: yellow;
+				float: left;
+				margin-top: 300px;
+				margin-left: 300px;
+			}
+
+			.point {
+				width: 20px;
+				height: 20px;
+				background-color: red;
+				position: fixed;
+				left: 0px;
+				top: 0px;
+				display: none;
+				z-index: 99999;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="chart">购物车<em>0</em></div>
+		<input type="button" name="" value="加入购物车" class="add" />
+		<div class="point"></div>
+	</body>
+</html>

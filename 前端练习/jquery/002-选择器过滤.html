@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>选择器过滤</title>
+		<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				/* var $div = $('div');
+				$div.css({'background-color':'red'}); */
+				$('div').css({
+					'backgroundColor': 'green'
+				});
+				$('div').has('p').css({
+					'backgroundColor': 'pink',
+					'fontSize': '30px'
+				});
+				$('div').eq(7).prev().css({
+					'fontSize': '90px'
+				});
+				$('div').find('.tip').css({
+					'backgroundColor': 'red'
+				});
+				$div2 = $('div2');
+				alert($div2.length);
+			});
+		</script>
+	</head>
+	<body>
+		<div>1</div>
+		<div>2</div>
+		<div>
+			<p>88</p>
+		</div>
+		<div>4</div>
+		<div>5</div>
+		<div>6</div>
+		<div>7</div>
+		<div>8</div>
+		<div><span class="tip">world</span><span>hello</span></div>
+	</body>
+</html>

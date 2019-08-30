@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>函数的定义和调用</title>
+		<script type="text/javascript">
+			function fnChange(){
+				alert("hello world");
+			}
+			function fnMake(){
+				var oDiv = document.getElementById('box1');
+				oDiv.style.color='red';
+				oDiv.style.fontSize='40px';
+			}
+		</script>
+	</head>
+	<body>
+		<div id="box" >这是一个div段落</div>
+		<div id="box1" onclick="fnChange()">这是一个div段落</div>
+		<input type="button" name="" value="改变div" onclick="fnMake()" />
+	</body>
+</html>

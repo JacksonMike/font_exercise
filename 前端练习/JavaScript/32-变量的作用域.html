@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>变量的作用域</title>
+		<script type="text/javascript">
+			var a = 12;
+			function myalert(){
+				var b = 99;
+				a += 999;
+				alert(a);
+			}
+			function myalert2(){
+				alert(a);
+			}
+			myalert();
+			// myalert2();
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
